@@ -1,0 +1,56 @@
+/// @description Player movement
+//Player Input
+key_left = keyboard_check(vk_left)
+key_right = keyboard_check(vk_right)
+key_jump = keyboard_check_pressed(vk_space)
+
+//Movement calculation
+var movement = key_right - key_left
+
+horizontal_speed = movement * walk_speed
+
+vertical_speed += player_gravity
+
+//Check jump from ground
+var is_player_on_ground = place_meeting(x, y+1, object_wall)
+
+if is_player_on_ground && key_jump{
+	vertical_speed = -5
+}
+
+//Check horizontal collision with walls
+if place_meeting(x+horizontal_speed, y, object_wall){
+	while !place_meeting(x+sign(horizontal_speed), y, object_wall) {
+		x += sign(horizontal_speed)
+	}
+	horizontal_speed = 0
+}
+
+//Check vertical collision with ground (wall)
+if place_meeting(x, y+vertical_speed, object_wall){
+	while !place_meeting(x, y+sign(vertical_speed), object_wall) {
+		y += sign(vertical_speed)
+	}
+	vertical_speed = 0
+}
+
+//Player movement
+x += horizontal_speed
+y += vertical_speed
+
+//Animation
+show_debug_message(is_player_on_ground)
+if !is_player_on_ground {
+	sprite_index = sprite_player_jump_right
+	image_speed = 0
+	if (sign(vertical_speed)) image_index = 16; else image_index = 11;
+} else {
+	image_speed = 1;
+	if (horizontal_speed == 0) {
+		sprite_index = sprite_player;
+	} else {
+		sprite_index = sprite_player_walk_right;
+	}
+}
+
+if (horizontal_speed != 0) image_xscale = sign(horizontal_speed);
