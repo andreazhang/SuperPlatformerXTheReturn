@@ -47,6 +47,14 @@
             }
         },
         {
+            "Key": "12bba565-d5ff-4994-aedf-30cd48881519",
+            "Value": {
+                "id": "ae8402ff-5370-4983-989e-f4263738363f",
+                "resourcePath": "objects\\object_sword_projectile\\object_sword_projectile.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "1b06890e-a440-4f12-a70d-6595d24b5b49",
             "Value": {
                 "id": "d3d29707-4236-4037-ae20-d9bc32561d38",
@@ -127,6 +135,14 @@
             }
         },
         {
+            "Key": "5ffb1809-0d6a-45fd-bdea-0e52c9d51c88",
+            "Value": {
+                "id": "21535f77-b66e-41b0-bff3-54f7cc29e5a0",
+                "resourcePath": "sprites\\sprite_sword\\sprite_sword.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "6bb9337d-55e7-4f18-a118-15733d1be53f",
             "Value": {
                 "id": "ebd8eff5-a67e-463e-825c-e66e1a053b1d",
@@ -148,6 +164,14 @@
                 "id": "270e11c7-3cc7-4f4b-af9b-3eb2867d899b",
                 "resourcePath": "views\\7808c9b8-53c0-4772-a54e-d3f71f7edc0d.yy",
                 "resourceType": "GMFolder"
+            }
+        },
+        {
+            "Key": "7d5bb245-8cbe-4167-b594-01386af489b4",
+            "Value": {
+                "id": "14ef8fe6-6e67-4d6e-8c9d-7f90527cdf27",
+                "resourcePath": "sprites\\sprite_sword_projection\\sprite_sword_projection.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -183,18 +207,18 @@
             }
         },
         {
+            "Key": "c1ea62e1-2021-45ac-9d20-02915fe69bd5",
+            "Value": {
+                "id": "a384f067-fe3e-4806-969b-28a69d64f792",
+                "resourcePath": "objects\\object_sword\\object_sword.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "c3c31eb1-e2d7-45d8-96c7-9e7ab919cdcf",
             "Value": {
                 "id": "ec9b6baf-d35d-41ec-bf6a-6923599d9759",
                 "resourcePath": "sprites\\sprite_player_walk_right\\sprite_player_walk_right.yy",
-                "resourceType": "GMSprite"
-            }
-        },
-        {
-            "Key": "c4c70a7a-d555-4742-aa75-f6ddfe466f7a",
-            "Value": {
-                "id": "0d7dff5e-0a17-4955-881f-6231952fb84b",
-                "resourcePath": "sprites\\sprite_player_walk_left\\sprite_player_walk_left.yy",
                 "resourceType": "GMSprite"
             }
         },

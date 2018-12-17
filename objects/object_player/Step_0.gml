@@ -1,8 +1,8 @@
 /// @description Player movement
 //Player Input
-key_left = keyboard_check(vk_left)
-key_right = keyboard_check(vk_right)
-key_jump = keyboard_check_pressed(vk_space)
+key_left = keyboard_check(vk_left) || keyboard_check(ord("A"))
+key_right = keyboard_check(vk_right) || keyboard_check(ord("D"))
+key_jump = keyboard_check_pressed(vk_space) || keyboard_check(ord("W"))
 
 //Movement calculation
 var movement = key_right - key_left
@@ -43,14 +43,14 @@ show_debug_message(is_player_on_ground)
 if !is_player_on_ground {
 	sprite_index = sprite_player_jump_right
 	image_speed = 0
-	if (sign(vertical_speed)) image_index = 16; else image_index = 11;
+	if (sign(vertical_speed)) image_index = 16 else image_index = 11
 } else {
-	image_speed = 1;
+	image_speed = 1
 	if (horizontal_speed == 0) {
-		sprite_index = sprite_player;
+		sprite_index = sprite_player
 	} else {
-		sprite_index = sprite_player_walk_right;
+		sprite_index = sprite_player_walk_right
 	}
 }
 
-if (horizontal_speed != 0) image_xscale = sign(horizontal_speed);
+if (horizontal_speed != 0) image_xscale = sign(horizontal_speed)
