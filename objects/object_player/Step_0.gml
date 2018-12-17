@@ -12,9 +12,8 @@ horizontal_speed = movement * walk_speed
 vertical_speed += player_gravity
 
 //Check jump from ground
-var is_player_on_ground = place_meeting(x, y+1, object_wall)
 
-if is_player_on_ground && key_jump{
+if place_meeting(x, y+1, object_wall) && key_jump{
 	vertical_speed = -5
 }
 
@@ -39,8 +38,7 @@ x += horizontal_speed
 y += vertical_speed
 
 //Animation
-show_debug_message(is_player_on_ground)
-if !is_player_on_ground {
+if !place_meeting(x, y+1, object_wall) {
 	sprite_index = sprite_player_jump_right
 	image_speed = 0
 	if (sign(vertical_speed)) image_index = 16 else image_index = 11

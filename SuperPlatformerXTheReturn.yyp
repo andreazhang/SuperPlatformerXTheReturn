@@ -87,6 +87,22 @@
             }
         },
         {
+            "Key": "2d5a1a91-7b46-4324-9ed3-86782484b580",
+            "Value": {
+                "id": "3826599e-dcbc-44c2-b1d4-ceb8c7c660e8",
+                "resourcePath": "sprites\\sprite_enemy\\sprite_enemy.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "32c67298-dc0f-4de3-ae5d-48300a7b5816",
+            "Value": {
+                "id": "82dd61cb-751a-42bd-97f0-dfbbad32da12",
+                "resourcePath": "sprites\\sprite_enemy_jump_right\\sprite_enemy_jump_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "33fe248f-9888-42a6-83d1-cd2d0e36e426",
             "Value": {
                 "id": "4515bdcd-99a9-42b6-831d-02acb2c47b66",
@@ -199,6 +215,14 @@
             }
         },
         {
+            "Key": "99e9b2c3-bde2-4d27-96d3-d7a8436f15e0",
+            "Value": {
+                "id": "642ec8c1-ab8a-4300-82f3-8bb98b8951cb",
+                "resourcePath": "objects\\object_enemy_dead\\object_enemy_dead.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "b735eede-549f-4d87-8a79-37021b0fc4fe",
             "Value": {
                 "id": "c573cab7-e0e6-4d40-8741-04a4e388efb9",
@@ -239,11 +263,35 @@
             }
         },
         {
+            "Key": "d7842544-995a-44a5-bfea-38ddad1f05fe",
+            "Value": {
+                "id": "ab78a2eb-dd94-44fe-98d9-2c5e18069beb",
+                "resourcePath": "sprites\\sprite_enemy_walk_right\\sprite_enemy_walk_right.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
+            "Key": "ddd1762c-41b4-41e0-bf96-5b2befb61b40",
+            "Value": {
+                "id": "b9486514-412f-4bd1-ac40-5ca2d89e32b4",
+                "resourcePath": "objects\\object_enemy\\object_enemy.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "e2a50c8a-fc4c-4c6c-9a78-64fe72318cc5",
             "Value": {
                 "id": "435f580f-c356-47bb-ba4b-6888158b7eff",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "ee1daa3d-f9d1-43ab-afb3-b08c0d9fc84f",
+            "Value": {
+                "id": "8bf03f9b-faea-4558-b5ea-9805956f9088",
+                "resourcePath": "sprites\\sprite_enemy_dead\\sprite_enemy_dead.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
